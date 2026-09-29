@@ -1,0 +1,118 @@
+/* 通用設定與防水平捲動 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* 確保無水平捲動 */
+}
+
+/* 導覽與主視覺 */
+header {
+    background: #222;
+    color: #fff;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.hero {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* 網格與卡片設計 */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.size, .shipping {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+/* FAQ 展開設計 */
+details {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: #2c3e50;
+}
+
+details p {
+    margin-top: 0.8rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* 頁尾 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #ddd;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2rem;
+}
